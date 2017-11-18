@@ -1,0 +1,19 @@
+#!/usr/bin/env node
+
+const program = require('caporal');
+const find = require('find-process');
+
+const pkg = require('../package.json');
+const killPort = require('../index');
+
+program
+  .version(pkg.version)
+  .description(pkg.description)
+  .argument('<port>')
+  .action(argv => {
+    killPort(argv.port).catch(err => {
+      console.error(err);
+    });
+  });
+
+program.parse(process.argv);

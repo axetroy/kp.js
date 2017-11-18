@@ -1,0 +1,27 @@
+{
+  "name": "kp",
+  "version": "0.1.0",
+  "description": "Kill the process which listen on a port",
+  "main": "index.js",
+  "bin": {
+    "kp": "./bin/kp"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/axetroy/Github.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/axetroy/Github/issues"
+  },
+  "homepage": "https://github.com/axetroy/Github#readme",
+  "dependencies": {
+    "caporal": "^0.8.0",
+    "cross-spawn": "^5.1.0",
+    "find-process": "^1.1.0"
+  }
+}

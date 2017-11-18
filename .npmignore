@@ -1,0 +1,11 @@
+.idea
+.vscode
+*.log
+node_modules
+.travis.yml
+.all-contributorsrc
+.github
+.gpmrc
+.gitattributes
+.gitignore
+contributing.md
