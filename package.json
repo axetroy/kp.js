@@ -1,5 +1,5 @@
 {
-  "name": "kp",
+  "name": "@axetroy/kp",
   "version": "0.1.0",
   "description": "Kill the process which listen on a port",
   "main": "index.js",
@@ -13,8 +13,8 @@
     "type": "git",
     "url": "git+https://github.com/axetroy/Github.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Axetroy",
+  "license": "Apache",
   "bugs": {
     "url": "https://github.com/axetroy/Github/issues"
   },
