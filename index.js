@@ -25,17 +25,19 @@ async function spawnAsync(command, argv = [], options = {}) {
 
 async function killPort(port) {
   const processList = await find('port', port);
-  const processLength = processList.length;
 
-  if (!processLength) {
-    console.info(`Port ${port} is available.`);
+  if (!processList.length) {
+    process.stdout.write(`Port ${port} is available.\n`);
     return;
   }
 
   // send kill signal
-  while (processLength) {
+  while (processList.length) {
     const p = processList.shift();
-    const msg = `The process ${p.pid} have been killed. (${p.name})\n`;
+    if (!p) continue;
+    const msg = `The process ${p.name}(${p.pid}) have been killed. ${
+      p.cmd ? '(' + p.cmd + ')' : ''
+    }\n`;
     try {
       process.kill(p.pid, 'SIGKILL');
       process.stdout.write(msg);
@@ -43,6 +45,8 @@ async function killPort(port) {
       if (process.platform === 'win32') {
         await spawnAsync('taskkill', ['/pid', p.pid, '/f']);
         process.stdout.write(msg);
+      } else {
+        await spawnAsync('kill', ['-p', p.pid]);
       }
     }
   }

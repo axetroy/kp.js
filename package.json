@@ -7,7 +7,8 @@
     "kp": "./bin/kp"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "cross-env KP_TEST_PORT=4066 node server.js",
+    "test": "cross-env KP_TEST_PORT=4066 ava"
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,10 @@
     "caporal": "^0.8.0",
     "cross-spawn": "^5.1.0",
     "find-process": "^1.1.0"
+  },
+  "devDependencies": {
+    "ava": "^0.23.0",
+    "cross-env": "^5.1.1",
+    "koa": "^2.4.1"
   }
 }
