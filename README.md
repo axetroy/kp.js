@@ -1,7 +1,6 @@
 ## Kill the process which listen on a port
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/axetroy/kp.svg)](https://greenkeeper.io/)
-
 [![Build Status](https://travis-ci.org/axetroy/Github.svg?branch=master)](https://travis-ci.org/axetroy/Github)
 ![License](https://img.shields.io/badge/license-Apache-green.svg)
 
