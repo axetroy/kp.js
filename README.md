@@ -7,7 +7,7 @@
 ## Usage
 
 ```bash
-npm install @axetroy/kp
+npm install @axetroy/kp -g
 kp 3000 # kill the process which listen on 3000
 ```
 
