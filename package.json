@@ -26,7 +26,7 @@
     "find-process": "^1.1.0"
   },
   "devDependencies": {
-    "ava": "^0.24.0",
+    "ava": "^0.25.0",
     "cross-env": "^5.1.1",
     "koa": "^2.4.1"
   }
