@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/axetroy/Github#readme",
   "dependencies": {
-    "caporal": "^0.9.0",
+    "caporal": "^0.10.0",
     "cross-spawn": "^6.0.0",
     "find-process": "^1.1.0"
   },
