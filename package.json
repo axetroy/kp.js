@@ -8,7 +8,9 @@
   },
   "scripts": {
     "server": "cross-env KP_TEST_PORT=4066 node server.js",
-    "test": "cross-env KP_TEST_PORT=4066 ava"
+    "test": "cross-env KP_TEST_PORT=4066 ava",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -23,11 +25,13 @@
   "dependencies": {
     "caporal": "^0.10.0",
     "cross-spawn": "^6.0.0",
-    "find-process": "^1.1.0"
+    "find-process": "^1.1.0",
+    "snyk": "^1.88.0"
   },
   "devDependencies": {
     "ava": "^0.25.0",
     "cross-env": "^5.1.1",
     "koa": "^2.4.1"
-  }
+  },
+  "snyk": true
 }
