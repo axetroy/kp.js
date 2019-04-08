@@ -21,12 +21,12 @@
   },
   "homepage": "https://github.com/axetroy/Github#readme",
   "dependencies": {
-    "caporal": "^0.10.0",
+    "caporal": "^1.1.0",
     "cross-spawn": "^6.0.0",
     "find-process": "^1.1.0"
   },
   "devDependencies": {
-    "ava": "^0.25.0",
+    "ava": "^1.4.1",
     "cross-env": "^5.1.1",
     "koa": "^2.4.1"
   }
