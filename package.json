@@ -23,7 +23,7 @@
   "dependencies": {
     "caporal": "^0.10.0",
     "cross-spawn": "^6.0.0",
-    "find-process": "^1.1.0"
+    "find-process": "^1.4.5"
   },
   "devDependencies": {
     "ava": "^0.25.0",
